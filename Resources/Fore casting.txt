@@ -1,0 +1,21 @@
+Modelling yield estimation based on fruit detection :
+ The yield can be affected by several factors (climate, fertilization, diseases, etc.) and does not conform to a classical linear
+model. Currently, neural networks such as Long Short-Term Memory
+(LSTM) for recurrent neural networks can understand and recognize
+complex patterns in data (Fischer and Krauss, 2018). In this work, a
+model based on LSTM and encoding with Keras was used to estimate
+yield based on the fruit count of each tree. To train the model, the total
+number of fruits per tree (Nft) (model prediction) for each face with the actual yield per
+tree (Yapt)(labelled) and the total actual yield (Tayield) (ground truth) for each season were
+analysed. The data were assembled in pairs of two years for training,
+and the remaining one was used for testing. Finally, the model was
+trained for yield estimation per tree (Yept) and for total yield estimation
+(Teyield) separately.
+
+
+
+Problem Type	Examples	                                                                                                 Output
+Classification	Anomaly detection, time series identification (where did this time series come from?)	                        Discrete (a label)
+Forecasting	Predicting stock market prices, forecasting future demand for a product, stocking inventory requirements	Continuous (a number)
+
+
