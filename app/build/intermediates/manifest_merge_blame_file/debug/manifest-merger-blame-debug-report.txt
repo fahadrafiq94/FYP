@@ -1,0 +1,76 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.tensorflow.codelabs.objectdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:5:5-9:15
+12        <intent>
+12-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:6:9-8:18
+13            <action android:name="android.media.action.IMAGE_CAPTURE" />
+13-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:7:13-73
+13-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:7:21-70
+14        </intent>
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20
+21    <application
+21-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:11:5-33:19
+22        android:allowBackup="true"
+22-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:12:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.3.2] C:\Users\Mian\.gradle\caches\transforms-2\files-2.1\f4726924add2327517ec5f23b6aa3aba\core-1.3.2\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:label="@string/app_name"
+26-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:13:9-41
+27        android:supportsRtl="true"
+27-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:14:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.ObjectDetection" >
+29-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:15:9-53
+30        <activity android:name="org.tensorflow.codelabs.objectdetection.MainActivity" >
+30-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:16:9-22:20
+30-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:16:19-86
+31            <intent-filter>
+31-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:17:13-21:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:18:17-69
+32-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:18:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:20:17-77
+34-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:20:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:24:9-32:20
+39            android:name="androidx.core.content.FileProvider"
+39-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:25:13-62
+40            android:authorities="org.tensorflow.codelabs.objectdetection.fileprovider"
+40-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:26:13-87
+41            android:exported="false"
+41-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:27:13-37
+42            android:grantUriPermissions="true" >
+42-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:28:13-47
+43            <meta-data
+43-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:29:13-31:54
+44                android:name="android.support.FILE_PROVIDER_PATHS"
+44-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:30:17-67
+45                android:resource="@xml/file_paths" />
+45-->D:\android app\odml-pathways-main (2)\odml-pathways-main\object-detection\codelab2\android\final\app\src\main\AndroidManifest.xml:31:17-51
+46        </provider>
+47    </application>
+48
+49</manifest>
